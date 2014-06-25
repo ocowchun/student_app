@@ -1,19 +1,23 @@
 <p id="notice"><%= notice %></p>
 
+<div>
+	<%= image_tag @student.avatar.url(:medium) %>
+</div>
 <p>
-  <strong>Name:</strong>
-  <%= @student.name %>
+	<strong>Name:</strong>
+	<%= @student.name %>
 </p>
 
 <p>
-  <strong>Phone:</strong>
-  <%= @student.phone %>
+	<strong>Phone:</strong>
+	<%= @student.phone %>
 </p>
 
 <p>
-  <strong>Email:</strong>
-  <%= @student.email %>
+	<strong>Email:</strong>
+	<%= @student.email %>
 </p>
+
 
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
